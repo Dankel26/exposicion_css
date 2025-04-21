@@ -1,1 +1,93 @@
-<p>landing-page-oocss works!</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing-page-oocss</title>
+    <link rel="stylesheet" href="landing-page-oocss.component.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+<body class="parent">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+            <div class="container-fluid my-2" style="margin: 10px;">
+              <a class="navbar-brand" href="../index.html">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav" style="padding-left: 250px;">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">OOCSS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <section class="section1">
+        <div class="card text-end text-bg-dark mb-3 h-100 w-100">
+            <div class="row g-0 h-100">
+              <div class="col-md-8 h-100">
+                <div class="card-body  h-100">
+                    <h1 class="card-title">¿Que es OOCSS?</h1>
+                    <p class="card-text">Es una arquitectura o Metodologia que proviene de la metologuia BEM pero añadiendo una estructura de archivos.</p>
+                    <p class="card-text">CSS orientado a onbejos (oocss) se empea de la misma forma que con cualquier método de codificación basado en objetos, el objetivo de OOCSS es fomentar la reutilización del código y, en última instancia, hojas de estilo más rápidas y eficientes que son más fáciles de agregar y mantener una estructura ordenada para el codigo.</p>
+                </div>
+              </div>
+              <div class="col-md-4 h-100">
+                    <img src="img/1627663148-oocss-css-architecture.png" class="img-fluid rounded-start h-100 w-100" alt="...">
+              </div>
+            </div>
+        </div>
+    </section>
+    <section class="section2">
+          <div class="row row-cols-1 row-cols-md-2 g-4 h-100">
+          <div class="col h-100">
+            <div class="card border-light mb-3 h-100">
+                <img src="img/Captura de pantalla 2025-04-21 082547.png" class="card-img-top h-100 w-100" alt="...">
+              <div class="card-body h-50">
+                <h5 class="card-title">Principios de OOCSS</h5>
+                <p class="card-text">Los principios de OOCSS se basan en separar la estructura (como el layout, la posición y el tamaño) de la apariencia (como los colores, sombras y bordes), permitiendo así una mayor modularidad y reutilización del código. Además, promueve la separación entre el contenedor y el contenido, de modo que el diseño no dependa de elementos específicos, lo que facilita su adaptación y mantenimiento en distintos contextos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col h-100">
+            <div class="card text-bg-dark mb-3 h-100">
+              <img src="img/Captura de pantalla 2025-04-21 084619.png" class="card-img-top h-100 w-100" alt="...">
+              <div class="card-body h-50">
+                <h5 class="card-title">La organización de carpetas en OOCSS</h5>
+                <p class="card-text">Generalmente, se utiliza una carpeta principal llamada styles que contiene subcarpetas como: _base, donde se definen los estilos globales y resets; _layout, que incluye la estructura general del sitio, como grids o contenedores principales; _module, donde se almacenan los componentes reutilizables como botones, tarjetas o formularios; _other, para estilos complementarios o específicos que no encajan en las demás categorías; y _shame, una carpeta destinada a estilos excepcionales o temporales que no siguen las buenas prácticas, pero que son necesarios en ciertos casos. Esta organización permite mantener el CSS modular y fácil de escalar.                </p>
+              </div>
+            </div>
+          </div>
+            </div>
+    </section>
+    <section class="section3">
+        <div class="card text-bg-dark mb-3 h-100 w-100">
+            <div class="row g-0 h-100">
+                <div class="col-md-4 h-100">
+                    <img src="img/Captura de pantalla 2025-04-21 085611.png" class="img-fluid rounded-start h-100 w-100" alt="...">
+                </div>
+                <div class="col-md-8 h-100">
+                    <div class="card-body h-100">
+                        <h1 class="card-title">Comparación entre OOCSS, BEM y SMACSS</h1>
+                        <p class="card-text">OOCSS, BEM y SMACSS son metodologías que buscan mejorar la organización del CSS, pero con enfoques distintos. OOCSS se enfoca en separar estructura y apariencia, y en crear componentes reutilizables. BEM (Block Element Modifier) utiliza una convención de nombres clara y jerárquica para facilitar la comprensión y el mantenimiento del código. Por su parte, SMACSS (Scalable and Modular Architecture for CSS) clasifica los estilos en categorías como base, layout, módulo, estado y tema, lo que ayuda a escalar proyectos grandes. Aunque diferentes, las tres metodologías pueden complementarse entre sí según las necesidades del proyecto.</p>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+<footer style="border-top: 1px solid white; color: white; text-align: center; padding: 10px; width: 100vw;">
+    © 2025 xd.
+</footer>
+</html>
