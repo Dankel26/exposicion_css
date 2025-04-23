@@ -1,0 +1,31 @@
+.l-grid-parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 10px;
+    background-color: rgb(17, 20, 22); /* Esto puede ir a _theme si se usa en más lugares */
+}
+
+.l-grid-header {
+    grid-column: span 5 / span 5;
+    grid-row: span 0.5 / span 0.5;
+}
+
+.l-grid-section {
+    grid-column: span 5 / span 5;
+}
+
+.l-grid-section--1 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 2;
+}
+
+.l-grid-section--2 {
+    grid-row: span 3 / span 3;
+    grid-row-start: 4;
+}
+
+.l-grid-section--3 {
+    grid-row: span 3 / span 3;
+    grid-row-start: 7;
+}

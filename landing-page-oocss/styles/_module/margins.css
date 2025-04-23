@@ -1,0 +1,18 @@
+.u-margin-responsive {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+@media (max-width: 768px) {
+    .u-margin-responsive {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 576px) {
+    .u-margin-responsive {
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+}
