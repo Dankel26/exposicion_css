@@ -3,12 +3,13 @@
     background-color: rgb(17, 20, 22);
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     gap: 10px;
 }
     
 .header {
     grid-column: span 5 / span 5;
+    grid-row: span 0.5 / span 0.5;
 }
 
 .section1 {
@@ -26,7 +27,7 @@
     }
 
     grid-column: span 5 / span 5;
-    grid-row: span 2 / span 2;
+    grid-row: span  2 / span 2;
     grid-row-start: 2;
 }
 
@@ -66,27 +67,5 @@
     grid-row-start: 7;
 }  
 
-
-
-
-
-
-
-/* Estructura */
-.media {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  /* Apariencia */
-  .media-rounded {
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
 
   
